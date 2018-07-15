@@ -1,0 +1,16 @@
+#include <stdio.h>
+ 
+int main(void) {
+ int b, n; float v;
+ scanf("%d%d", &n,&b);
+ if(n%5==0 && n<b)
+ {
+     v= b-(n+.50);
+        printf("%.2f", v);
+ }
+ else if(n%5!=0)
+ printf("%d", b);
+ else if(n%5==0 && (n=.5)>b)
+ printf("%d", b);
+	return 0;
+} 
