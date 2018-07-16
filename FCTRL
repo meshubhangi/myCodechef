@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{       long int a,b,c;
+        for(scanf("%ld",&a);a;a--)
+        {scanf("%ld",&b);
+        c=5;
+        int d=0;
+        while(b>=c)
+        {d+=b/c;
+        c*=5;
+        }
+        printf("%ld\n",d);
+        }
+        return 0;
+}  
