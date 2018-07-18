@@ -1,6 +1,7 @@
 #include <stdio.h>
  
-int main(void) {
+int main(void) 
+{
  int b, n; float v;
  scanf("%d%d", &n,&b);
  if(n%5==0 && n<b)
