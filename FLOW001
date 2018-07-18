@@ -1,5 +1,4 @@
 #include <stdio.h>
- 
 int main(void) 
 {
     int n, t, i, a1, a2;
