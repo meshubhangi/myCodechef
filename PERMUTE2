@@ -12,4 +12,15 @@ long int n,i, arr[100000],ar2[100000]={};
             ar2[arr[i]]=i;
         }
         for(i=1;i<=n;i++)
-        
+        {
+            if(arr[i]!=ar2[i])
+                break;
+        }
+        if(i<n+1)
+            printf("not ambiguous\n");
+        else
+            printf("ambiguous\n");
+        scanf("%ld",&n);
+    }
+	return 0;
+}
