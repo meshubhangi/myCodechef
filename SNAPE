@@ -8,12 +8,5 @@ int main(void)
 	 while(t--)
 	 {
 	 	fflush(stdin);
-	 	scanf("%d %d",&b,&ls);
-	 	min=sqrt(ls*ls-b*b);
-	 	max=sqrt(ls*ls+b*b);
-	 	
-	 	printf("%lf %lf\n",min,max);
-	 	
-	 }
-	return 0;
+	 	scanf("%d %d",&
 }
