@@ -1,0 +1,21 @@
+#include <stdio.h>
+ 
+int main(void) 
+{
+ int n,i,t,b,l=0;
+ scanf("%d", &n);
+ for(i=0; i<n; i++)
+ {
+     scanf("%d", &t);
+     l=0;
+     while(t>0)
+     {
+         b=t%10;
+         t=t/10;
+         if(b==4)
+         l++;
+     }
+     printf("%d \n", l);
+ }
+	return 0;
+}
