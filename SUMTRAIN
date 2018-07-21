@@ -1,0 +1,27 @@
+#include <stdio.h>
+ 
+int main(void)
+{
+    int n,t,i,j, a[1000][1000];
+    scanf("%d",&n);
+    while(n--)
+    {
+        scanf("%d",&t);
+        for(i=0;i<=t-1;i++)
+        for(j=0;j<=i;j++)
+        scanf("%d",&a[i][j]);
+        for(i=t-1;i>0;i--)
+        {
+            for(j=t-1;j>0;j--)
+           {
+            if(a[i][j]>a[i][j-1])
+            a[i-1][j-1]=a[i-1][j-1]+a[i][j];
+ 
+            else
+            a[i-1][j-1]=a[i-1][j-1]+a[i][j-1];
+           }
+        }
+    printf("%d\n", a[0][0]);
+    }
+	return 0;
+}
