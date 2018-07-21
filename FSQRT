@@ -9,3 +9,8 @@ int main(void)
     {
         scanf("%d", &num);
         t=sqrt(num);
+        printf("%d \n", t);
+    }
+	return 0;
+}
+ 
