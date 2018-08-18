@@ -1,0 +1,23 @@
+for tc in range(int(input())):
+    n, p=map(int, input().split())
+    a=[]
+    if (p<=2):
+        print('impossible')
+    else:
+        for i in range(n):
+            a.append('b')
+        if(n==p):
+            a[0]=a[-1]='a'
+            for k in range(len(a)):
+                print(a[k], end='')
+            print()
+        else:
+            t=n//p
+            for j in range(t):
+                c=[]
+                for i in range(p):
+                    c.append('b')
+                c[0]=c[-1]='a'
+                for k in range(len(c)):
+                    print(c[k], end='')
+            print()
