@@ -1,0 +1,16 @@
+for tc in range(int(input())):
+    s=input()
+    c=0
+    t=''
+    for i in range(len(s)-3):
+        #print(t, end=' ')
+        #print(c)
+        if (s[i] == 'c' or s[i]=='h' or s[i]=='e' or s[i]=='f'):
+            t= s[i]+s[i+1]+s[i+2]+s[i+3]
+        if (t.count('c')==1 and t.count('h')==1 and t.count('e')==1 and t.count('f')==1):
+            c=c+1
+        #print(t,c, end='')
+    if (c>0):
+        print("lovely", c)
+    else:
+        print("normal") 
