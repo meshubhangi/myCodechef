@@ -1,0 +1,23 @@
+for tc in range(int(input())):
+    n, r=map(int, input().split())
+    a=[int(x) for x in input().split()]
+    left=0
+    ri=le=0
+    right=0
+    for j in a:
+        if r>j:
+            if(left<j or le==0):
+                left=j
+                le+=1
+            else:
+                print("NO")
+                break
+        if r<j:
+            if(right>j or ri==0):
+                right=j
+                ri+=1
+            else:
+                print("NO")
+                break
+        if r==j:
+            print("YES")
