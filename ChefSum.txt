@@ -1,0 +1,20 @@
+for tc in range(int(input())):
+    a=[]
+    size=int(input())
+    for i in range(size):
+        a.append(-1)
+    mid=size//2
+    p=(2**32)-4
+    mini=p//(2*mid)
+    a[0]=mini
+    for i in range(1,size):
+        if(i==mid):
+            a[i]=1;
+        elif(i==mid-1):
+            a[i]=(p//2)-(mini*i)
+        elif(i==mid+1):
+            a[i]=a[mid-1]
+        else:
+            a[i]=mini
+        print(a[i], end=' ')
+    #print(len(a)) 
