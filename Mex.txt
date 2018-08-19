@@ -1,0 +1,16 @@
+for tc in range(int(input())):
+    n, k=map(int, input().split())
+    a=[int(x) for x in input().split()]
+    c=0
+    s=0
+    b=[]
+    for i in range(max(a)+200000):
+        b.append(int(-1))
+    for j in a:
+        b[j]=j
+    for m in range(max(a)+200000):
+        if c<(k+1):
+            if b[m]==-1:
+                c=c+1
+                s=m
+    print(s) 
