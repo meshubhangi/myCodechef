@@ -1,0 +1,39 @@
+#include <stdio.h>
+ 
+int main(void) 
+{   
+    int i, j, cake, hard, tc, p, q;
+    scanf("%d", &tc);
+    for (i=0; i<tc; i++)
+    {
+        scanf("%d%d", &q, &p);
+        int arr[q];
+        for(j=0; j<q; j++)
+        {
+            scanf("%d", &arr[j]);
+        }
+        cake=0;
+        hard=0;
+        for(j=0; j<q; j++)
+        {
+            if(arr[j]>=p/2)
+            {
+                cake++;
+            }
+            if(arr[j]<=p/10)
+            {
+                hard++;
+            }
+        }
+        if(cake==1 && hard==2)
+        {
+            printf("yes\n");
+        }
+        else
+        {
+            printf("no\n");
+        }
+    }
+	// your code goes here
+	return 0;
+}
