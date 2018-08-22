@@ -1,0 +1,25 @@
+s= input()
+lst=[]
+for q in range(int(input())):
+    l=[int(x) for x in input().split()]
+    lst.append(l)
+l= len(s)
+a=[]
+b=[]
+for i in range(l):
+    for j in range(i+1,l+1):
+        a.append(s[i:j])
+a.sort()
+hs=""
+for i in a:
+    hs=hs+i
+g=0
+
+for i in lst:
+    p=i[0]
+    m=i[1]
+    k=(p*g)%m +1
+    #print(k)
+    print(hs[k-1])
+    g=g+ord(hs[k-1])
+    #print(g, " ..")
